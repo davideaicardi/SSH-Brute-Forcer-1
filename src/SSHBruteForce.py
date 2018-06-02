@@ -17,22 +17,22 @@ class SSHBruteForce():
 
     def __init__(self):
         self.info = "Simple SSH Brute Forcer: By r4stl1n"
-        self.targetIp = ""
-        self.targetPort = 0
-        self.targets = []
-        self.usernames = []
-        self.passwords = []
-        self.connections  = []
-        self.amountOfThreads = 0
-        self.currentThreadCount = 0
-        self.timeoutTime = 0
-        self.outputFileName = None
-        self.singleMode = False
-        self.verbose = False
-        self.bruteForceLength = 0
-        self.bruteForceAttempts = 0
-        self.bruteForceMode = False
-        self.characters = "abcdefghijklmnopqrstuvwxyz_0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        self.targetIp = 		""
+        self.targetPort = 		0
+        self.targets = 			[]
+        self.usernames = 		[]
+        self.passwords = 		[]
+        self.connections  = 		[]
+        self.amountOfThreads = 		0
+        self.currentThreadCount = 	0
+        self.timeoutTime = 		0
+        self.outputFileName = 		None
+        self.singleMode = 		False
+        self.verbose = 			False
+        self.bruteForceLength = 	0
+        self.bruteForceAttempts = 	0
+        self.bruteForceMode = 		False
+        self.characters = 		"abcdefghijklmnopqrstuvwxyz_0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         
     def startUp(self):
         usage = '%s [-i targetIp] [-U usernamesFile] [-P passwordsFile]' % sys.argv[0]
